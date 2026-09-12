@@ -30,6 +30,9 @@ jobs:
       
       - name: Run Ruff
         run: ruff check .
+      
+      - name: Check formatting
+        run: ruff format --check .
 
       - name: Scan for secrets
         uses: gitleaks/gitleaks-action@v2
